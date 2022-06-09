@@ -3,3 +3,6 @@ Login Screen:
 
 Menu:
 https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/
+
+Image:
+https://stackoverflow.com/questions/14433096/allow-the-user-to-insert-an-image-in-android-app
