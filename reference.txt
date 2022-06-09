@@ -1,5 +1,5 @@
 Login Screen:
-1) https://codinginfinite.com/login-screen-android-example/
+https://codinginfinite.com/login-screen-android-example/
 
 Menu:
 https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/
@@ -12,3 +12,4 @@ https://www.youtube.com/watch?v=gAdcLXEUn2w
 Database:
 https://stackoverflow.com/questions/54101413/how-to-insert-and-retrieve-image-from-sqlite-database-in-android-studio
 https://www.geeksforgeeks.org/how-to-create-and-add-data-to-sqlite-database-in-android/
+https://stackoverflow.com/questions/41783000/how-to-create-multiple-tables-in-android-studio-database
