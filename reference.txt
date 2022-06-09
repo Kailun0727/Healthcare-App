@@ -1,2 +1,5 @@
 Login Screen:
 1) https://codinginfinite.com/login-screen-android-example/
+
+Menu:
+https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/
