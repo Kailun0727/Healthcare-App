@@ -7,6 +7,7 @@ https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/
 Image:
 https://stackoverflow.com/questions/14433096/allow-the-user-to-insert-an-image-in-android-app
 https://www.youtube.com/watch?v=gAdcLXEUn2w
+https://www.youtube.com/watch?v=fqZDL8XsWHc
 
 
 Database:
