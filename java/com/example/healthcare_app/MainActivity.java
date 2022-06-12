@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements NavigationBarView.OnItemReselectedListener{
 
     BottomNavigationView bottomNavigationView;
 
@@ -18,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setOnItemReselectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.profile);
 
     }
@@ -27,21 +30,19 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     ThirdFragment thirdFragment = new ThirdFragment();
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
+    public void onNavigationItemReselected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.firstFragment, firstFragment).commit();
-                return true;
+                break;
 
             case R.id.community:
                 getSupportFragmentManager().beginTransaction().replace(R.id.secondFragment, secondFragment).commit();
-                return true;
+                break;
 
             case R.id.profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.thirdFragment, thirdFragment).commit();
-                return true;
+                break;
         }
-        return false;
     }
 }
