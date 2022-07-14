@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class menu extends AppCompatActivity {
-    String id_str;
-    String name;
-    int points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +15,7 @@ public class menu extends AppCompatActivity {
     }
 
     public void clicked_profile(View view) {
-        id_str = getIntent().getStringExtra("id");
-        name = getIntent().getStringExtra("name");
-        points = getIntent().getIntExtra("points",0);
-        Intent i = new Intent(menu.this, profile.class);
-        i.putExtra("id", id_str);
-        i.putExtra("name", name);
-        i.putExtra("points", points);
+        Intent i = new Intent(menu.this, userTip.class);
         startActivity(i);
     }
 
