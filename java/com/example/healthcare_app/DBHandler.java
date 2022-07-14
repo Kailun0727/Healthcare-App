@@ -184,61 +184,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
     }
 
-    boolean updateUsername(String id, String username){
 
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(U_NAME_COL, username);
-
-        long result = db.update(USER_TABLE,values,"_id=?",new String[]{id});
-
-        if(result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
-
-    boolean updatePassword(String id, String password){
-
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(U_PASSWORD_COL, password);
-
-        long result = db.update(USER_TABLE,values,"_id=?",new String[]{id});
-
-        if(result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
-
-    boolean updateUsernameAndPassword(String id, String username, String password){
-
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(U_NAME_COL, username);
-
-        values.put(U_PASSWORD_COL, password);
-
-        long result = db.update(USER_TABLE,values,"_id=?",new String[]{id});
-
-        if(result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
 
 
     public boolean addAmin(String username,String password){

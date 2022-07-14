@@ -11,17 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".editProfile"
-            android:parentActivityName=".profile"></activity>
-        <activity android:name=".points" />
-        <activity android:name=".updateTip" />
+        <activity android:name=".updateTip"></activity>
         <activity android:name=".addTip" />
         <activity android:name=".adminMenu" />
         <activity android:name=".menu" />
         <activity android:name=".signup" />
-        <activity
-            android:name=".profile"
-            android:parentActivityName=".menu" />
         <activity
             android:name=".userTip"
             android:parentActivityName=".menu" />
