@@ -3,6 +3,7 @@ package com.example.healthcare_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void clicked_login(View view) {
+
         String name = username.getText().toString();
         String ps = password.getText().toString();
         String lastCheckedIn = "";
@@ -104,6 +106,17 @@ public class MainActivity extends AppCompatActivity{
             } else if (currentTime.compareTo(compareTime) == 0) {
                 Toast.makeText(this, "You already checked in today. Please come back tomorrow. ", Toast.LENGTH_SHORT).show();
             }
+
+            // Storing data into SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
+
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+
+            myEdit.putString("name",name);
+
+            myEdit.putString("id",id_str);
+
+            myEdit.commit();
 
 
             Intent i = new Intent(MainActivity.this, menu.class);
