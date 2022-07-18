@@ -4,32 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addTip"
+    tools:context=".editProfile"
     android:background="@drawable/gradient"
     android:orientation="vertical">
 
 
     <TextView
-        android:id="@+id/addTipTextView"
+        android:id="@+id/editProfile"
         android:layout_marginTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Add Tip"
+        android:text="Edit Profile"
         android:textColor="@color/colorBackground"
         android:textSize="35sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/tipEditText"
+        android:id="@+id/editUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addTipTextView"
+        android:layout_below="@id/editProfile"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="50dp"
-        android:hint="Enter Tip"
-        android:textColor="@color/colorTextView"
+        android:hint="Enter New Username"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUsername"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
         android:textColorHint="@color/colorAccent"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,16 +57,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addButton"
+        android:id="@+id/editButton"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_below="@+id/tipEditText"
+        android:layout_below="@+id/editPassword"
         android:layout_marginTop="35dp"
         android:background="@color/colorBackground"
-        android:onClick="clicked_addTip"
+        android:onClick="clicked_save_profile"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:text="Add"
+        android:text="Save"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp" />
