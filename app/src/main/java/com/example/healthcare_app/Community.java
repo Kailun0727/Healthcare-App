@@ -1,6 +1,6 @@
 package com.example.healthcare_app;
 
-public class community {
+public class Community {
     public void test(){
 
     }
