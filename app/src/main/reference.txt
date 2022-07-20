@@ -1,0 +1,19 @@
+Login Screen:
+https://codinginfinite.com/login-screen-android-example/
+
+Menu:
+https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/
+
+Image:
+https://stackoverflow.com/questions/14433096/allow-the-user-to-insert-an-image-in-android-app
+https://www.youtube.com/watch?v=gAdcLXEUn2w
+https://www.youtube.com/watch?v=fqZDL8XsWHc
+
+
+Database:
+https://stackoverflow.com/questions/54101413/how-to-insert-and-retrieve-image-from-sqlite-database-in-android-studio
+https://www.geeksforgeeks.org/how-to-create-and-add-data-to-sqlite-database-in-android/
+https://stackoverflow.com/questions/41783000/how-to-create-multiple-tables-in-android-studio-database
+
+Community:
+https://stackoverflow.com/questions/39768308/android-cardview-padding-error

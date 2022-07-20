@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_show_password.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/show_password.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_add.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_menu.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/menu.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_recyclerview_user.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_recyclerview_user.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_community_foreground.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_community_foreground.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_add_tip.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_add_tip.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_person_background.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_person_background.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_setting.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/setting.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_tip.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/tip.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_person_foreground.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_person_foreground.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_contact_us.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/contact_us.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_menu.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_home_foreground.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_home_foreground.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_settings_foreground.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_settings_foreground.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_admin_menu.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_admin_menu.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.healthcare_app-pngs-18:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_main.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_home_background.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_home_background.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_gradient.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/gradient.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_edit.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/edit.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_recyclerview.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_recyclerview.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_tip_row.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/tip_row.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_profile.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_settings_background.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_settings_background.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_icon.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/icon.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/xml_backup_rules.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_user_icon.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/user_icon.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_ic_community_background.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/ic_community_background.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_update_tip.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_update_tip.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_call.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/call.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/layout_activity_signup.xml.flat",
+        "source": "com.example.healthcare_app-main-25:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_community_icon.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/community_icon.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_points.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/points.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/drawable_hide_password.png.flat",
+        "source": "com.example.healthcare_app-main-25:/drawable/hide_password.png"
+    },
+    {
+        "merged": "com.example.healthcare_app-merged_res-23:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.healthcare_app-main-25:/mipmap-xxxhdpi/ic_launcher.webp"
+    }
+]
