@@ -1,7 +1,7 @@
 package com.example.healthcare_app;
 
 public class Community {
-    public void hi(){
+    public void hello(){
 
     }
 }
