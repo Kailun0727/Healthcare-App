@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity{
             startActivity(i);
             return;
         } else {
-            Toast.makeText(MainActivity.this, "Invalid Admin Username or Password!\nPlease try again!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Invalid Username or Password!\nPlease try again!", Toast.LENGTH_SHORT).show();
         }
 
     }
