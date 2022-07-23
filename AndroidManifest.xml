@@ -13,9 +13,10 @@
         android:theme="@style/Theme.AppCompat.Light">
         <activity android:name=".editProfile"
             android:parentActivityName=".profile"></activity>
-        <activity android:name=".points" />
-        <activity android:name=".updateTip" />
-        <activity android:name=".addTip" />
+        <activity android:name=".updateTip"
+            android:parentActivityName=".adminMenu"/>
+        <activity android:name=".addTip"
+            android:parentActivityName=".adminMenu"/>
         <activity android:name=".adminMenu" />
         <activity android:name=".menu" />
         <activity android:name=".signup" />
