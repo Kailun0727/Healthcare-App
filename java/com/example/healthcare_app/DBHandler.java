@@ -164,13 +164,14 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     public Cursor readPoints(String id){
-
+        // on below line we are creating a
+        // database for reading our database.
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor c = db.rawQuery("SELECT * FROM User WHERE _id = ?", new String[]{id});
+        // on below line we are creating a cursor with query to read data from database.
+        Cursor c = db.rawQuery("SELECT * FROM User WHERE _id =?", new String[]{id});
 
         return c;
-
     }
 
     boolean updateUser(String id,String lastCheckedIn,int point){
