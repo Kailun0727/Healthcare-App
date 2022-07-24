@@ -15,7 +15,7 @@
 11-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:5:22-77
 12
 13    <application
-13-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:7:5-40:19
+13-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:7:5-46:19
 14        android:allowBackup="true"
 14-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,64 +33,75 @@
 22        android:theme="@style/Theme.AppCompat.Light" >
 22-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:13:9-53
 23        <activity
-23-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:14:9-15:62
-24            android:name="com.example.healthcare_app.editProfile"
-24-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:14:19-46
-25            android:parentActivityName="com.example.healthcare_app.profile" />
-25-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:15:13-50
-26        <activity android:name="com.example.healthcare_app.points" />
-26-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:16:9-44
-26-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:16:19-41
-27        <activity android:name="com.example.healthcare_app.updateTip" />
-27-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:17:9-47
-27-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:17:19-44
-28        <activity android:name="com.example.healthcare_app.addTip" />
-28-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:18:9-44
-28-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:18:19-41
-29        <activity android:name="com.example.healthcare_app.adminMenu" />
-29-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:19:9-47
-29-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:19:19-44
-30        <activity android:name="com.example.healthcare_app.menu" />
-30-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:20:9-42
-30-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:20:19-39
-31        <activity android:name="com.example.healthcare_app.signup" />
-31-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:21:9-44
-31-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:21:19-41
-32        <activity
-32-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:22:9-24:50
-33            android:name="com.example.healthcare_app.profile"
-33-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:23:13-36
-34            android:parentActivityName="com.example.healthcare_app.menu" />
-34-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:24:13-47
-35        <activity
-35-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:25:9-27:50
-36            android:name="com.example.healthcare_app.userTip"
-36-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:26:13-36
-37            android:parentActivityName="com.example.healthcare_app.menu" />
-37-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:27:13-47
-38        <activity
-38-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:28:9-30:55
-39            android:name="com.example.healthcare_app.tip"
-39-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:29:13-32
-40            android:parentActivityName="com.example.healthcare_app.adminMenu" />
-40-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:30:13-52
-41        <activity
-41-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:31:9-39:20
-42            android:name="com.example.healthcare_app.MainActivity"
-42-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:32:13-41
-43            android:exported="true" >
-43-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:33:13-36
-44            <intent-filter>
-44-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:34:13-38:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:35:17-69
-45-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:35:25-66
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:37:17-77
-47-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:37:27-74
-48            </intent-filter>
-49        </activity>
-50    </application>
+23-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:14:9-17:40
+24            android:name="com.example.healthcare_app.Community"
+24-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:15:13-38
+25            android:exported="false"
+25-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:17:13-37
+26            android:parentActivityName="com.example.healthcare_app.menu" />
+26-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:16:13-47
+27        <activity
+27-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:18:9-20:53
+28            android:name="com.example.healthcare_app.editProfile"
+28-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:19:13-40
+29            android:parentActivityName="com.example.healthcare_app.profile" />
+29-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:20:13-50
+30        <activity android:name="com.example.healthcare_app.points" />
+30-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:21:9-44
+30-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:21:19-41
+31        <activity android:name="com.example.healthcare_app.updateTip" />
+31-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:22:9-47
+31-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:22:19-44
+32        <activity android:name="com.example.healthcare_app.commentPage" />
+32-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:23:9-48
+32-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:23:19-46
+33        <activity android:name="com.example.healthcare_app.addTip" />
+33-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:24:9-44
+33-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:24:19-41
+34        <activity android:name="com.example.healthcare_app.adminMenu" />
+34-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:25:9-47
+34-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:25:19-44
+35        <activity android:name="com.example.healthcare_app.menu" />
+35-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:26:9-42
+35-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:26:19-39
+36        <activity android:name="com.example.healthcare_app.signup" />
+36-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:27:9-44
+36-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:27:19-41
+37        <activity
+37-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:28:9-30:50
+38            android:name="com.example.healthcare_app.profile"
+38-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:29:13-36
+39            android:parentActivityName="com.example.healthcare_app.menu" />
+39-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:30:13-47
+40        <activity
+40-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:31:9-33:50
+41            android:name="com.example.healthcare_app.userTip"
+41-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:32:13-36
+42            android:parentActivityName="com.example.healthcare_app.menu" />
+42-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:33:13-47
+43        <activity
+43-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:34:9-36:55
+44            android:name="com.example.healthcare_app.tip"
+44-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:35:13-32
+45            android:parentActivityName="com.example.healthcare_app.adminMenu" />
+45-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:36:13-52
+46        <activity
+46-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:37:9-45:20
+47            android:name="com.example.healthcare_app.MainActivity"
+47-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:38:13-41
+48            android:exported="true" >
+48-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:39:13-36
+49            <intent-filter>
+49-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:40:13-44:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:41:17-69
+50-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:41:25-66
 51
-52</manifest>
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:43:17-77
+52-->C:\Users\lim woei lee\AndroidStudioProjects\healthcare_app\app\src\main\AndroidManifest.xml:43:27-74
+53            </intent-filter>
+54        </activity>
+55    </application>
+56
+57</manifest>

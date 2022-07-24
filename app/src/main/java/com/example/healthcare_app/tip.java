@@ -19,6 +19,7 @@ public class tip extends AppCompatActivity {
     DBHandler dbHandler;
 
     ArrayList<String> t_id,t_tip,t_date;
+    ArrayList<Integer> t_support;
 
     adminTipAdapter tipAdapter;
 
@@ -32,10 +33,11 @@ public class tip extends AppCompatActivity {
         t_id = new ArrayList<>();
         t_tip = new ArrayList<>();
         t_date = new ArrayList<>();
+        t_support = new ArrayList<>();
 
         storeDataInArray();
 
-        tipAdapter = new adminTipAdapter(tip.this,this,t_id,t_tip,t_date);
+        tipAdapter = new adminTipAdapter(tip.this,this,t_id,t_tip,t_date, t_support);
 
         recyclerView.setAdapter(tipAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(tip.this));
@@ -62,6 +64,7 @@ public class tip extends AppCompatActivity {
                 t_id.add(c.getString(0));
                 t_tip.add(c.getString(1));
                 t_date.add(c.getString(2));
+                t_support.add(c.getInt(c.getColumnIndex("support")));
             }
         }
     }

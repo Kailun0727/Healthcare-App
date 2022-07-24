@@ -29,7 +29,13 @@ public class menu extends AppCompatActivity {
     }
 
     public void clicked_community(View view) {
-        Intent i = new Intent(menu.this, userTip.class);
+        id_str = getIntent().getStringExtra("id");
+        name = getIntent().getStringExtra("name");
+        points = getIntent().getIntExtra("points",0);
+        Intent i = new Intent(menu.this,Community.class);
+        i.putExtra("id", id_str);
+        i.putExtra("name", name);
+        i.putExtra("points", points);
         startActivity(i);
     }
 

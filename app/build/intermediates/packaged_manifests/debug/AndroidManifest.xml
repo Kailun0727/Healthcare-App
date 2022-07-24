@@ -21,10 +21,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light" >
         <activity
+            android:name="com.example.healthcare_app.Community"
+            android:exported="false"
+            android:parentActivityName="com.example.healthcare_app.menu" />
+        <activity
             android:name="com.example.healthcare_app.editProfile"
             android:parentActivityName="com.example.healthcare_app.profile" />
         <activity android:name="com.example.healthcare_app.points" />
         <activity android:name="com.example.healthcare_app.updateTip" />
+        <activity android:name="com.example.healthcare_app.commentPage" />
         <activity android:name="com.example.healthcare_app.addTip" />
         <activity android:name="com.example.healthcare_app.adminMenu" />
         <activity android:name="com.example.healthcare_app.menu" />
