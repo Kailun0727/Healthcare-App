@@ -37,11 +37,6 @@ public class profile extends AppCompatActivity {
         dbhandler = new DBHandler(this);
     }
 
-    public void clicked_community(View view) {
-        Intent i = new Intent(profile.this, Community.class);
-        startActivity(i);
-    }
-
     public void clicked_points(View view) {
 
         Cursor c = dbhandler.readPoints(id);
