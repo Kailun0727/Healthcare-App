@@ -38,7 +38,7 @@ public class profile extends AppCompatActivity {
     }
 
     public void clicked_community(View view) {
-        Intent i = new Intent(profile.this, menu.class);
+        Intent i = new Intent(profile.this, Community.class);
         startActivity(i);
     }
 
@@ -63,6 +63,11 @@ public class profile extends AppCompatActivity {
         getId = getIntent().getStringExtra("id");
         Intent i = new Intent(profile.this, editProfile.class);
         i.putExtra("id", id);
+        startActivity(i);
+    }
+
+    public void clicked_sign_out(View view){
+        Intent i = new Intent(profile.this, MainActivity.class);
         startActivity(i);
     }
 }

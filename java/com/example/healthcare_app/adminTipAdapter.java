@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class adminTipAdapter extends RecyclerView.Adapter<adminTipAdapter.adminTipViewHolder> {
 
     Context context;
-    ArrayList t_id,t_tip,t_date;
+    ArrayList t_id,t_tip,t_date, t_support;
     Activity activity;
 
     int position;
@@ -28,12 +28,13 @@ public class adminTipAdapter extends RecyclerView.Adapter<adminTipAdapter.adminT
                     Context context,
                    ArrayList t_id,
                    ArrayList t_tip,
-                   ArrayList t_date){
+                   ArrayList t_date, ArrayList t_support){
         this.activity = activity;
         this.context = context;
         this.t_id = t_id;
         this.t_tip = t_tip;
         this.t_date = t_date;
+        this.t_support = t_support;
     }
 
 
@@ -51,6 +52,7 @@ public class adminTipAdapter extends RecyclerView.Adapter<adminTipAdapter.adminT
         this.position = position;
         holder.t_tip_tv.setText(String.valueOf(t_tip.get(position)));
         holder.t_date_tv.setText(String.valueOf(t_date.get(position)));
+        holder.tv_support.setText(String.valueOf(t_support.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +70,7 @@ public class adminTipAdapter extends RecyclerView.Adapter<adminTipAdapter.adminT
 
     public class adminTipViewHolder extends RecyclerView.ViewHolder{
 
-        TextView t_id_tv,t_tip_tv,t_date_tv;
+        TextView t_id_tv,t_tip_tv,t_date_tv, tv_support;
 
         LinearLayout mainLayout;
 
@@ -77,6 +79,7 @@ public class adminTipAdapter extends RecyclerView.Adapter<adminTipAdapter.adminT
             t_tip_tv = itemView.findViewById(R.id.t_tip);
             t_date_tv = itemView.findViewById(R.id.t_date);
             mainLayout = itemView.findViewById(R.id.mainLayout);
+            tv_support = itemView.findViewById(R.id.tv_support);
         }
     }
 }

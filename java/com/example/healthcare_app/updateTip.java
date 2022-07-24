@@ -34,19 +34,13 @@ public class updateTip extends AppCompatActivity {
 
         tip = tip_et.getText().toString();
 
-        if(!tip_et.getText().toString().isEmpty()){
-            boolean updateTip = dbHandler.updateTip(id,tip);
-            if(updateTip == true){
-                Toast.makeText(this,"Updated Successfully",Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(this,"Failed to update",Toast.LENGTH_SHORT).show();
-            }
+        boolean updateTip = dbHandler.updateTip(id,tip);
+
+        if(updateTip == true){
+            Toast.makeText(this,"Updated Successfully",Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Tip cannot be empty",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Failed to update",Toast.LENGTH_SHORT).show();
         }
-
-
-
     }
 
 }

@@ -30,6 +30,9 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String COMMUNITY_TABLE = "Community";
 
+    private static final String COMMENT_TABLE = "Comment";
+
+
 
 
     //User Section
@@ -78,6 +81,13 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String C_TYPE_COL = "type";
 
+    //Comment Section
+    // C = Community, CU = Community User T=Tip
+    private static final String CM_ID_COL = "id";
+
+    private static final String CM_TEXT_COL = "text";
+
+
 
     // creating a constructor for our database handler.
     public DBHandler(Context context) {
@@ -103,11 +113,18 @@ public class DBHandler extends SQLiteOpenHelper {
                 + CU_ID_COL+ " TEXT,"
                 + C_TYPE_COL + " TEXT)";
 
+        String createCommentTable = "CREATE TABLE " + COMMENT_TABLE + "("
+                + CM_ID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + CU_NAME_COL + " TEXT,"
+                + CM_TEXT_COL + " TEXT,"
+                + T_TIP_COL + "INTEGER)";
+
+
         db.execSQL("create Table User(_id INTEGER primary key ,name TEXT, password TEXT,point INTEGER,lastCheckedIn TEXT)");
         db.execSQL("create Table Admin(_id INTEGER primary key ,name TEXT, password TEXT)");
-        db.execSQL("create Table Tip(_id INTEGER primary key ,tip TEXT, date TEXT)");
+        db.execSQL("create Table Tip(_id INTEGER primary key ,tip TEXT, date TEXT, support INTEGER)");
         db.execSQL("create Table Community(id INTEGER primary key AUTOINCREMENT,cu_name TEXT, cu_id TEXT, cu_type TEXT)");
-
+        db.execSQL("create Table Comment(id INTEGER primary key AUTOINCREMENT, u_id INTEGER, cm_text TEXT, t_tipid TEXT)");
     }
 
 
@@ -185,6 +202,21 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(U_POINT_COL,point);
 
 
+        long result = db.update(USER_TABLE,values,"_id=?",new String[]{id});
+
+        if(result == -1){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    boolean updateUserPoint(String id, int point){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(U_POINT_COL,point);
         long result = db.update(USER_TABLE,values,"_id=?",new String[]{id});
 
         if(result == -1){
@@ -347,6 +379,26 @@ public class DBHandler extends SQLiteOpenHelper {
         }
     }
 
+    public boolean addTipSupport(String id){
+
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor c = db.rawQuery("SELECT support FROM " + TIP_TABLE + " WHERE _id = ? LIMIT 1", new String[]{id});
+        c.moveToFirst();
+        int support = c.getInt(c.getColumnIndex("support"));
+        support++;
+
+        ContentValues values = new ContentValues();
+        values.put("support", support);
+
+        long result = db.update(TIP_TABLE, values, "_id=?", new String[]{id});
+
+        if(result == -1){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public Cursor readAllTip(){
         // on below line we are creating a
         // database for reading our database.
@@ -354,6 +406,32 @@ public class DBHandler extends SQLiteOpenHelper {
 
         // on below line we are creating a cursor with query to read data from database.
         Cursor c = db.rawQuery("SELECT * FROM Tip ", null);
+
+        return c;
+    }
+
+    public boolean addComment(String userId, String tipId, String comment){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put("u_id", userId);
+        values.put("t_tipid", tipId);
+        values.put("cm_text", comment);
+
+        long result = db.insert(COMMENT_TABLE, null, values);
+
+        if(result == -1){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public Cursor readComments(String user_id, String tip_id){
+        SQLiteDatabase db = getWritableDatabase();
+
+        Cursor c = db.rawQuery("SELECT * FROM " + COMMENT_TABLE + " WHERE u_id = ? AND t_tipid = ?", new String[]{user_id, tip_id});
 
         return c;
     }

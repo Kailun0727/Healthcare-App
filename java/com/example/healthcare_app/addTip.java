@@ -28,23 +28,17 @@ public class addTip extends AppCompatActivity {
 
     public void clicked_addTip(View view) {
         String tip = tip_et.getText().toString();
+        Date currentDate = new Date();
 
-        if(!tip_et.getText().toString().isEmpty()) {
-            Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String currentDate_str = dateFormat.format(currentDate);
 
-            String currentDate_str = dateFormat.format(currentDate);
+        boolean insertTip = dbHandler.addTip(tip,currentDate_str);
 
-            boolean insertTip = dbHandler.addTip(tip, currentDate_str);
-
-            if (insertTip == true) {
-                Toast.makeText(this, "Successful!", Toast.LENGTH_SHORT).show();
-            }
-        }else{
-            Toast.makeText(this, "Tip cannot be empty", Toast.LENGTH_SHORT).show();
+        if (insertTip == true){
+            Toast.makeText(this,"Successful!",Toast.LENGTH_SHORT).show();
         }
-
     }
 
 }
